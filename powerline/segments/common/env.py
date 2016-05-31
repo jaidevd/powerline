@@ -9,6 +9,11 @@ from powerline.segments import Segment, with_docstring
 
 
 @requires_segment_info
+def say_hello(pl, segment_info):
+    return "Hello World!"
+
+
+@requires_segment_info
 def environment(pl, segment_info, variable=None):
 	'''Return the value of any defined environment variable
 
